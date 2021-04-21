@@ -1,94 +1,16 @@
 <!DOCTYPE html>
-<!--idioma en el tag html-->
 <html lang="es">
     <head>
-        <!--Colección de caracteres en el tag meta-->
         <meta charset="UTF-8"/>
-        <title>Diego Herrera</title>
-        <link rel="icon" type="image/png" href="images/SanAut.png"/>
-        <link rel="stylesheet" href="./css/estilos.css">
-        <!--Forma de poner estilos con tags. No es necesario ponerlo en head pero se acostumbra--> 
-        <!--Un estilo inline pesa más que un interno-->
-        <!--Un estilo interno pesa más que un externo-->
-        <!--<style>
-            header{
-                background-color: greenyellow;
-            }
-        </style>-->
+        <title>Hello World</title>
     </head>
     <body>
-        <!--Forma de poner estilos inline style="color:#333;background:rgb(184, 153, 153);"-->
         <header class="header">
             <div>
-                <figure class="logo">
-                    <img src="images/florBlanca.JPG" alt="Logo de http://wea.com" width="500" height="700"/> logo
-                </figure>
-                <nav class="menu">
-                    <ul>
-                        <!--elementos de la lista no ordenada (ul)-->
-                        <li>
-                            <!--# referencia a un id dentro de la página-->
-                            <a class="link" href="#primera">Portafolio</a>
-                        </li>
-                        <li>
-                            <a class="link" href="#segunda">Experiencia</a>
-                        </li>
-                        <li>
-                            <a class="link" href="#tercera">Trabajemos juntos</a>
-                        </li>
-                        <li>
-                            <!--Pueden enlazar directo a formularios-->
-                            <a class="link" href="#email">Directo al formulario</a>
-                        </li>
-                        <li>
-                            <!--Referencia a un archivo dentro del root-->
-                            <a class="link" href="./link.html">Otra página</a>
-                        </li>
-                        <li>
-                            <!--Referencia a una página web distinta-->
-                            <a class="link" href="https://www.youtube.com/watch?v=rgCSgNakvlo" target="_blank">Link al mejor video del mundo</a>
-                        </li>
-                    </ul>
-                </nav>
+                <li>
+                    <a class="link" href="https://www.youtube.com/watch?v=rgCSgNakvlo" target="_blank">Link al mejor video del mundo</a>
+                </li>
             </div>
         </header>
-        <section class="hero" id="primera">
-            <h1>
-                Esta es la <strong>primera</strong> primera sección de la página. <br/> La <strong>wea</strong> loca <br/> este es un break <br/>
-            </h1>
-            <img src="images/florecillasAzules.JPG" width="500" height="700" alt="imagen principal del sition"/>
-        </section>
-        <section class="second" id="segunda">
-            <h2>Esta es la segunda sección de la página</h2>
-            <article>
-                <figure>
-                    <img src="images/florecillasAzules2.JPG" alt="Imagen de un artículo" width="500" height="700">
-                </figure>
-                <h3>Primera parte</h3>
-                <h6>Weita</h6>
-                <p><small><strong>Fecha:</strong> 10/01/2021</small></p>
-            </article>
-        </section>
-        <section class="third" id="tercera">
-            <h2>Tercera parte de la página</h2>
-            <article class="project">
-                <figure>
-                    <img />
-                </figure>
-                <h3 class="project-title">Título del artículo</h3>
-                <a class="link">Enlace weón</a>
-            </article>
-        </section>
-        <section class="contacto" id="cuarta">
-            <form action="/suscripcion"class="form-email">
-                <h3>Este es el formulario</h3>
-                <!--Las etiquetas también pueden enlazar directo a formularios. Muy útiles para usar con checkboxes-->
-                <label for="email">I will never be a memory</label>
-                <input type="text" placeholder="Puto el que escriba" value="@gmail.com" id="email">
-                <input type="submit" value="texto del botón">
-                <button>Enviar</button>
-            </form>
-        </section>
-        <footer>footer</footer>
     </body>
 </html>
