@@ -28,8 +28,7 @@ with open(BASE_DIR/'SECRET_KEY') as f:
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = [*, '13.84.165.239']
-
+ALLOWED_HOSTS = ['*', '13.84.165.239']
 
 # Application definition
 
