@@ -4,11 +4,38 @@
   <title>Página principal</title>
   <meta charset="UTF-8" name="viewport" content="width=device-width">
   <link rel="stylesheet" href="/Users/dherrera/Documents/Diego/Programacion/HackMX/2021/Reto_Liverpool/staticfiles/style1.css">
+  <link rel="stylesheet" href="{% static 'style1.css' %}">
+  <script src="script.js"></script>
 </head>
 <header>
   <img id="ImagenHeader" src="/Users/dherrera/Documents/Diego/Programacion/HackMX/2021/Reto_Liverpool/Images/Logof.gif" alt="Header Liverpool">
 </header>
 <body>
+  <form action = "proceso" method = "POST">
+    <div>
+      {% csrf_token %}
+      <input type="tel" id="phone" name="phone" required
+      minlength="0" maxlength="30" placeholder="Número de teléfono:">
+      <label for="tel">*</label>
+      <input type="email" id="email" name="email" required
+      minlength="8" maxlength="40" placeholder="Correo electrónico:">
+      <label for="email">*</label>
+    </div>
+    <div id="Pregunta">
+      ¿Eres un cuentahabiente de la tarjeta Liverpool?
+    </div>
+    <div>
+      <input type="radio" id="si" name="si" required size="50">
+      <label for="si">Sí</label>
+      <input type="radio" id="no" name="no" required size="50">
+      <label for="si">No</label>
+    </div>
+    <div>
+      <input type="submit" id="continuar" name="continuar" required
+      value = "Continuar">
+
+    </div>
+  </form>
   <div>
     <input type="tel" id="phone" name="phone" required
     minlength="0" maxlength="30" placeholder="Número de teléfono:">
@@ -33,5 +60,3 @@
   <div id="BoloDiv">
     <img id="Bolo" src="/Users/dherrera/Documents/Diego/Programacion/HackMX/2021/Reto_Liverpool/Images/bolof.png" alt="Header Liverpool">
   </div>
-</body>
-</html>
