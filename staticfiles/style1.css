@@ -52,5 +52,13 @@ input[type=button]{
     background-color:#DA0279;
     width: 60%;
     padding: 15px 15px;
-    margin: 10px 0px 100px;
+    margin: 10px 0px 30px;
+}
+#BoloDiv{
+    text-align: right;
+}
+#Bolo{
+    background-color: white;
+    float: right;
+    width: 70%;
 }
