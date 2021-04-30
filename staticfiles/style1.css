@@ -1,0 +1,56 @@
+header {
+    color: pink;
+    text-align: center;
+}
+#ImagenHeader{
+    width: 100%;
+    background-color: black;
+}
+#Pregunta{
+    margin: 10px 0px 30px;
+}
+
+html, body {
+    color: black;
+    background-color: #FFFFFF;
+    text-align: center;
+    margin: 0
+}
+
+input[type=radio]{
+    margin: 0px 0px 30px 20px;
+    background-color: #DA0279;
+} 
+input[type=radio]+label{
+    margin: 0px 0px 30px 20px;
+    color: black;
+} 
+
+label {
+    cursor: pointer;
+    color: red;
+    padding: 10px;
+    margin: 3px;
+}
+
+input[type=tel]{
+    width: 80%;
+    padding: 6px 10px;
+    margin: 25px 0px 0px;
+}
+input[type=email]{
+    width: 80%;
+    padding: 6px 10px;
+    margin: 10px 0px 30px;
+}
+input[type=button]:hover{
+    background-color: #ee339a;
+}
+input[type=button]{
+    color: white;
+    border: none;
+    background-color:#DA0279;
+    width: 60%;
+    padding: 15px 15px;
+    margin: 10px 0px 100px;
+}
