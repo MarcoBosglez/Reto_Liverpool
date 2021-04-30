@@ -3,11 +3,12 @@
 <head>
   <title>Página principal</title>
   <meta charset="UTF-8" name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="/staticfiles/style1.css">
-  <script src="script.js"></script>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'style1.css' %}">
+
 </head>
 <header>
-  <img id="ImagenHeader" src="/Images/Logof.gif" alt="Header Liverpool">
+  <img id="ImagenHeader" src="{% static 'Logof.gif' %}" alt="Header Liverpool">
 </header>
 <body>
     <img id="volverImg" src="" alt="Flecha">
