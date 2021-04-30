@@ -11,8 +11,8 @@
   <img id="ImagenHeader" src="/Images/Logof.gif" alt="Header Liverpool">
 </header>
 <body>
-  <div>
-    <form action = "proceso" method = "POST">
+  <form action = "proceso" method = "POST">
+    <div>
       {% csrf_token %}
       <input type="tel" id="phone" name="phone" required
       minlength="0" maxlength="30" placeholder="Número de teléfono:">
@@ -20,25 +20,22 @@
       <input type="email" id="email" name="email" required
       minlength="8" maxlength="10" placeholder="Correo electrónico:">
       <label for="email">*</label>
-    </form>
-  </div>
-  <div id="Pregunta">
-    ¿Eres un cuentahabiente de la tarjeta Liverpool?
-  </div>
-  <div>
-    <form action = "proceso" method = "POST">
+    </div>
+    <div id="Pregunta">
+      ¿Eres un cuentahabiente de la tarjeta Liverpool?
+    </div>
+    <div>
       <input type="radio" id="si" name="si" required size="50">
       <label for="si">Sí</label>
       <input type="radio" id="no" name="no" required size="50">
       <label for="si">No</label>
-    </form>
-  </div>
-  <div>
-    <form action="proceso" method="POST">
+    </div>
+    <div>
       <input type="submit" id="continuar" name="continuar" required
       value = "Continuar">
-    </form>
-  </div>
+
+    </div>
+  </form>
     
 </body>
 <footer>Pingüinos Enchilados 2021</footer>

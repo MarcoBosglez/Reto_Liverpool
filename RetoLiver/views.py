@@ -8,5 +8,5 @@ def index(request):
 def proceso(request):
     telefono = request.POST['phone']
     correo = request.POST['email']
-    card = request.POST['card']
-    return render(request, 'indexC.html', {'Phone': telefono, 'Email': correo, 'Check': card})
+    card = request.POST['si']
+    return render(request, 'proceso.html', {'Phone': telefono, 'Email': correo, 'Check': card})
