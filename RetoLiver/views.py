@@ -9,4 +9,5 @@ def proceso(request):
     telefono = request.POST['phone']
     correo = request.POST['email']
     card = request.POST['si']
-    return render(request, 'proceso.html', {'Phone': telefono, 'Email': correo, 'Check': card})
+    card2 = request.POST['no']
+    return render(request, 'proceso.html', {'Phone': telefono, 'Email': correo, 'Check': card, 'Check2': card2})
