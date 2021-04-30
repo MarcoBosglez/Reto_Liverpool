@@ -3,6 +3,7 @@
 <head>
   <title>Página principal</title>
   <meta charset="UTF-8">
+  {% load static%}
   <link rel="stylesheet" href="/staticfiles/style1.css">
   <script src="script.js"></script>
 </head>
@@ -11,25 +12,32 @@
 </header>
 <body>
   <div>
-    <input type="tel" id="phone" name="phone" required
-    minlength="0" maxlength="30" placeholder="Número de teléfono:">
-    <label for="tel">*</label>
-    <input type="email" id="email" name="email" required
-    minlength="8" maxlength="10" placeholder="Correo electrónico:">
-    <label for="email">*</label>
+    <form action = "proceso" method = "POST">
+      {% csrf_token %}
+      <input type="tel" id="phone" name="phone" required
+      minlength="0" maxlength="30" placeholder="Número de teléfono:">
+      <label for="tel">*</label>
+      <input type="email" id="email" name="email" required
+      minlength="8" maxlength="10" placeholder="Correo electrónico:">
+      <label for="email">*</label>
+    </form>
   </div>
   <div id="Pregunta">
     ¿Eres un cuentahabiente de la tarjeta Liverpool?
   </div>
   <div>
-    <input type="radio" id="si" name="si" required size="50">
-    <label for="si">Sí</label>
-    <input type="radio" id="no" name="no" required size="50">
-    <label for="si">No</label>
+    <form action = "proceso" method = "POST">
+      <input type="radio" id="si" name="si" required size="50">
+      <label for="si">Sí</label>
+      <input type="radio" id="no" name="no" required size="50">
+      <label for="si">No</label>
+    </form>
   </div>
   <div>
-    <input type="button" id="continuar" name="continuar" required
-    value = "Continuar">
+    <form action="proceso" method="POST">
+      <input type="submit" id="continuar" name="continuar" required
+      value = "Continuar">
+    </form>
   </div>
     
 </body>
